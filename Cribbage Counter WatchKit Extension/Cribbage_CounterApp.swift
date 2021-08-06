@@ -15,7 +15,8 @@ struct Cribbage_CounterApp: App {
                 ContentView()
             }
         }
-
         WKNotificationScene(controller: NotificationController.self, category: "myCategory")
     }
+    
 }
+

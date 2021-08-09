@@ -12,7 +12,7 @@ struct Cribbage_CounterApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                GameModeView()
             }
         }
         WKNotificationScene(controller: NotificationController.self, category: "myCategory")

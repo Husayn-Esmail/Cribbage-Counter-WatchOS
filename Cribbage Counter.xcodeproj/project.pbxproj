@@ -11,7 +11,7 @@
 		5655CD0526BCBB7D00C23C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5655CD0426BCBB7D00C23C68 /* Assets.xcassets */; };
 		5655CD0C26BCBB7D00C23C68 /* Cribbage Counter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5655CD0B26BCBB7D00C23C68 /* Cribbage Counter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5655CD1126BCBB7D00C23C68 /* Cribbage_CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5655CD1026BCBB7D00C23C68 /* Cribbage_CounterApp.swift */; };
-		5655CD1326BCBB7D00C23C68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5655CD1226BCBB7D00C23C68 /* ContentView.swift */; };
+		5655CD1326BCBB7D00C23C68 /* 121PointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5655CD1226BCBB7D00C23C68 /* 121PointView.swift */; };
 		5655CD1526BCBB7D00C23C68 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5655CD1426BCBB7D00C23C68 /* NotificationController.swift */; };
 		5655CD1726BCBB7D00C23C68 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5655CD1626BCBB7D00C23C68 /* NotificationView.swift */; };
 		5655CD1926BCBB7D00C23C68 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5655CD1826BCBB7D00C23C68 /* ComplicationController.swift */; };
@@ -19,6 +19,11 @@
 		5655CD1E26BCBB7E00C23C68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5655CD1D26BCBB7E00C23C68 /* Preview Assets.xcassets */; };
 		5655CD2A26BCBB7E00C23C68 /* Cribbage_CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5655CD2926BCBB7E00C23C68 /* Cribbage_CounterTests.swift */; };
 		5655CD3526BCBB7E00C23C68 /* Cribbage_CounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5655CD3426BCBB7E00C23C68 /* Cribbage_CounterUITests.swift */; };
+		56F6DDD026C06F020036F867 /* GameModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6DDCF26C06F020036F867 /* GameModeView.swift */; };
+		56F6DDD226C0B7BF0036F867 /* 61PointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6DDD126C0B7BF0036F867 /* 61PointView.swift */; };
+		56F6DDD426C0B8610036F867 /* RedWinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6DDD326C0B8610036F867 /* RedWinsView.swift */; };
+		56F6DDD626C0B8810036F867 /* BlueWinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6DDD526C0B8810036F867 /* BlueWinsView.swift */; };
+		56F6DDD826C0B9C00036F867 /* ResetConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6DDD726C0B9C00036F867 /* ResetConfirmationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +89,7 @@
 		5655CD0626BCBB7D00C23C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5655CD0B26BCBB7D00C23C68 /* Cribbage Counter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Cribbage Counter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5655CD1026BCBB7D00C23C68 /* Cribbage_CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cribbage_CounterApp.swift; sourceTree = "<group>"; };
-		5655CD1226BCBB7D00C23C68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5655CD1226BCBB7D00C23C68 /* 121PointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 121PointView.swift; sourceTree = "<group>"; };
 		5655CD1426BCBB7D00C23C68 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		5655CD1626BCBB7D00C23C68 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		5655CD1826BCBB7D00C23C68 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -98,6 +103,11 @@
 		5655CD3026BCBB7E00C23C68 /* Cribbage CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cribbage CounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5655CD3426BCBB7E00C23C68 /* Cribbage_CounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cribbage_CounterUITests.swift; sourceTree = "<group>"; };
 		5655CD3626BCBB7E00C23C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56F6DDCF26C06F020036F867 /* GameModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeView.swift; sourceTree = "<group>"; };
+		56F6DDD126C0B7BF0036F867 /* 61PointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 61PointView.swift; sourceTree = "<group>"; };
+		56F6DDD326C0B8610036F867 /* RedWinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedWinsView.swift; sourceTree = "<group>"; };
+		56F6DDD526C0B8810036F867 /* BlueWinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueWinsView.swift; sourceTree = "<group>"; };
+		56F6DDD726C0B9C00036F867 /* ResetConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetConfirmationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +171,12 @@
 			isa = PBXGroup;
 			children = (
 				5655CD1026BCBB7D00C23C68 /* Cribbage_CounterApp.swift */,
-				5655CD1226BCBB7D00C23C68 /* ContentView.swift */,
+				5655CD1226BCBB7D00C23C68 /* 121PointView.swift */,
+				56F6DDD726C0B9C00036F867 /* ResetConfirmationView.swift */,
+				56F6DDD326C0B8610036F867 /* RedWinsView.swift */,
+				56F6DDD526C0B8810036F867 /* BlueWinsView.swift */,
+				56F6DDCF26C06F020036F867 /* GameModeView.swift */,
+				56F6DDD126C0B7BF0036F867 /* 61PointView.swift */,
 				5655CD1426BCBB7D00C23C68 /* NotificationController.swift */,
 				5655CD1626BCBB7D00C23C68 /* NotificationView.swift */,
 				5655CD1826BCBB7D00C23C68 /* ComplicationController.swift */,
@@ -385,9 +400,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56F6DDD226C0B7BF0036F867 /* 61PointView.swift in Sources */,
+				56F6DDD826C0B9C00036F867 /* ResetConfirmationView.swift in Sources */,
 				5655CD1526BCBB7D00C23C68 /* NotificationController.swift in Sources */,
-				5655CD1326BCBB7D00C23C68 /* ContentView.swift in Sources */,
+				5655CD1326BCBB7D00C23C68 /* 121PointView.swift in Sources */,
+				56F6DDD626C0B8810036F867 /* BlueWinsView.swift in Sources */,
+				56F6DDD426C0B8610036F867 /* RedWinsView.swift in Sources */,
 				5655CD1926BCBB7D00C23C68 /* ComplicationController.swift in Sources */,
+				56F6DDD026C06F020036F867 /* GameModeView.swift in Sources */,
 				5655CD1126BCBB7D00C23C68 /* Cribbage_CounterApp.swift in Sources */,
 				5655CD1726BCBB7D00C23C68 /* NotificationView.swift in Sources */,
 			);

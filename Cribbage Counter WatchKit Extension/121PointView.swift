@@ -21,10 +21,9 @@ class Counters: ObservableObject {
     static var shared = Counters()
 }
 
-struct ContentView: View {
+struct o21PointView: View {
     @ObservedObject var scores = Counters.shared;
     @State var resetRequest: Bool = false;
-    
     var body: some View {
         return Group  {
             if scores.scores.redScore == 121 {
@@ -79,45 +78,19 @@ struct ContentView: View {
                         Text("\(scores.scores.redScore)")
                             .offset(x:-54, y: 0)
                     }
-                
+                    NavigationLink(destination: ResetConfirmationView(), isActive: $resetRequest){
+                        Button(action: {resetRequest = true}, label: {
+                            Text("Reset")
+                        })
+                    }
                 }
             }
         }
-// I want to build a winner screen and a separate screen for reset so that it's not accidentally tapped. perhaps reset can be on a different page. I could also create a screen to select a 61 point game or a 121 point game.
-        
 }
  
-// if red wins
-struct RedWinsView: View {
-    @ObservedObject var scores = Counters.shared
-    var body: some View {
-        VStack {
-            Text("Red Wins!")
-                .foregroundColor(.red)
-            Text("\(scores.scores.redScore)")
-            Button(action:{scores.scores.blueScore = 0; scores.scores.redScore = 0;}, label: {Text("Reset")
-            })
-            .background(Color.gray)
-            .cornerRadius(10)
-        }
-    }
-}
+
     
-// if blue wins
-struct BlueWinsView: View{
-    @ObservedObject var scores = Counters.shared
-    var body: some View {
-        VStack {
-        Text("Blue Wins!")
-            .foregroundColor(.blue)
-            Text("\(scores.scores.blueScore)")
-        Button(action:{scores.scores.blueScore = 0; scores.scores.redScore = 0;}, label: {Text("Reset")
-        })
-        .background(Color.gray)
-        .cornerRadius(10)
-        }
-    }
-}
+
     
 // Reset confirmation view for ContentView screen
 struct ResetView: View {
@@ -125,20 +98,10 @@ struct ResetView: View {
         Text("Are you sure you want to reset?")
     }
 }
-
-//struct SixtyOnePointView: View {
-//    var body: some View {
-//        Text("61 point view")
-//    }
-//}
-    
-    
-
-    
     
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        o21PointView()
     }
 }
 }

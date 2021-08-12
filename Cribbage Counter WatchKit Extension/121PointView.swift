@@ -74,29 +74,21 @@ struct o21PointView: View {
                     // display scores
                     HStack {
                         Text("\(scores.scores.blueScore)")
-                            .offset(x:54, y: 0)
+                            .frame(minWidth:0, maxWidth: 30, minHeight: 23, maxHeight: 23)
+                            .offset(x:65, y: 0)
                         Text("\(scores.scores.redScore)")
-                            .offset(x:-54, y: 0)
+                            .offset(x:-65, y: 0)
+                            .frame(minWidth:0, maxWidth: 30, minHeight: 23, maxHeight: 23)
                     }
                     NavigationLink(destination: ResetConfirmationView(), isActive: $resetRequest){
                         Button(action: {resetRequest = true}, label: {
                             Text("Reset")
                         })
+                        .scaledToFill()
                     }
                 }
             }
         }
-}
- 
-
-    
-
-    
-// Reset confirmation view for ContentView screen
-struct ResetView: View {
-    var body: some View {
-        Text("Are you sure you want to reset?")
-    }
 }
     
 struct ContentView_Previews: PreviewProvider {

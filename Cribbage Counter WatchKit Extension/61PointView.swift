@@ -60,9 +60,11 @@ struct s1PointView: View {
                     // display scores
                     HStack {
                         Text("\(scores.scores.blueScore)")
-                            .offset(x:54, y: 0)
+                            .offset(x:65, y: 0)
+                            .frame(minWidth:0, maxWidth: 30, minHeight: 23, maxHeight: 23)
                         Text("\(scores.scores.redScore)")
-                            .offset(x:-54, y: 0)
+                            .offset(x:-65, y: 0)
+                            .frame(minWidth:0, maxWidth: 30, minHeight: 23, maxHeight: 23)
                     }
                     NavigationLink(destination: ResetConfirmationView(), isActive: $resetRequest){
                         Button(action: {resetRequest = true}, label: {
